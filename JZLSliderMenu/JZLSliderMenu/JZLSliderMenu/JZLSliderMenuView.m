@@ -156,25 +156,6 @@
 }
 
 
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    static float newx = 0;
-    static float oldx = 0;
-    newx= scrollView.contentOffset.x ;
-    if (newx != oldx ) {
-        //Left-YES,Right-NO
-        if (newx > oldx) {
-            
-        }else {
-            
-        }
-        oldx = newx;
-    }
-    
-    
-    
-    
-}
-
 
 
 
