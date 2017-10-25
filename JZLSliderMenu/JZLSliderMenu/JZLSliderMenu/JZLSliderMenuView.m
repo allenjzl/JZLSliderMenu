@@ -72,7 +72,7 @@
     
     //控制器的父视图scrollview
     self.mainView.frame = CGRectMake(0, 31, [UIScreen mainScreen].bounds.size.width, self.frame.size.height - 31 );
-    self.mainView.contentSize = CGSizeMake(SCREEN_WIDTH * 10, self.frame.size.height - 31);
+    self.mainView.contentSize = CGSizeMake(SCREEN_WIDTH * self.childViewControllers.count, self.frame.size.height - 31);
     [self addSubview:self.mainView];
     [self creatChlidViewController];
     self.mainView.contentOffset = CGPointMake(SCREEN_WIDTH * self.selectedIndex, 0);
